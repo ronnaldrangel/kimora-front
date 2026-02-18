@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
 
             <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '30px', textAlign: 'center', opacity: 0.5, fontSize: '0.9rem' }}>
-                <p>&copy; {new Date().getFullYear()} Grupo KIMORA EIRL. Todos los derechos reservados.</p>
+                <p>&copy; {new Date().getFullYear()} Grupo KIMORA EIRL. Todos los derechos reservados. | Desarrollado por <a href="https://rangel.pro/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', fontWeight: '600' }}>rangel.pro</a></p>
             </div>
         </footer>
     )
