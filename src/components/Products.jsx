@@ -45,16 +45,16 @@ const Products = () => {
                             borderTop: `5px solid ${i % 2 === 0 ? 'var(--primary-green)' : 'var(--primary-orange)'}`,
                             transition: 'transform 0.3s ease'
                         }} className="product-card">
-                            <h3 style={{ color: 'var(--text-dark)', marginBottom: '20px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>{cat.name}</h3>
+                            <h3 style={{ color: 'var(--text-dark)', marginBottom: '20px', borderBottom: '1px solid #eee', paddingBottom: '10px', textAlign: 'center' }}>{cat.name}</h3>
                             <ul style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                                 {cat.items.map((item, idx) => (
-                                    <li key={idx} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--text-light)', fontSize: '0.95rem' }}>
+                                    <li key={idx} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', color: 'var(--text-light)', fontSize: '0.95rem' }}>
                                         <div style={{ width: '6px', height: '6px', background: 'var(--primary-orange)', borderRadius: '50%' }}></div>
                                         {item}
                                     </li>
                                 ))}
                             </ul>
-                            <div style={{ marginTop: '30px' }}>
+                            <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'center' }}>
                                 <a href="#contact" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--primary-green)', fontWeight: 600, fontSize: '0.9rem' }}>
                                     Solicitar cotización <ArrowRight size={16} />
                                 </a>
